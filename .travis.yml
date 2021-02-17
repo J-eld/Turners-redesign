@@ -6,6 +6,7 @@ cache:
   - /frontend/node_modules
 script:
   - cd frontend
+  - npm install webpack
   - npm install -D webpack-cli
   - npm run build
 deploy:
