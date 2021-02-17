@@ -6,7 +6,7 @@ cache:
   - node_modules
 script:
   - cd frontend
-  - npm run build
+  - npm run dev
 deploy:
   provider: pages
   skip_cleanup: true
