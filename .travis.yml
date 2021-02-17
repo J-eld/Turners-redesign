@@ -6,7 +6,8 @@ cache:
   - /frontend/node_modules
 script:
   - cd frontend
-  - npm run dev
+  - npm install -D webpack-cli
+  - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
