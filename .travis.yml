@@ -16,7 +16,7 @@ script:
   - npm run dev
   - cd ..
   - cd backend
-  - python3 manage.py runserver
+  - python3 manage.py runserver 0.0.0.0:8000
 deploy:
   provider: heroku
   api_key: $api_key
