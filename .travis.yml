@@ -6,6 +6,9 @@ python:
 cache:
   directories:
   - /frontend/node_modules
+
+install: 
+  - pip install -q Django==$DJANGO
 script:
   - cd frontend
   - npm install webpack
@@ -13,7 +16,6 @@ script:
   - npm run dev
   - cd ..
   - cd backend
-  - import django
   - python3 manage.py runserver
 deploy:
   provider: heroku
