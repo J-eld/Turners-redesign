@@ -1,4 +1,4 @@
-language: node_js
+language: python
 node_js:
   - "stable"
 cache:
@@ -9,6 +9,9 @@ script:
   - npm install webpack
   - npm install -D webpack-cli
   - npm run build
+  - cd ..
+  - cd backend
+  - cd py manage.py runserver
 deploy:
   provider: heroku
   api_key: $api_key
