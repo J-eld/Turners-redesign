@@ -11,7 +11,7 @@ script:
   - npm run build
   - cd ..
   - cd backend
-  - cd py manage.py runserver
+  - py manage.py runserver
 deploy:
   provider: heroku
   api_key: $api_key
