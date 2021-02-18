@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
+
 import whitenoise
 import os
 
@@ -119,8 +119,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Configure app for Heroku deployment
-django_heroku.settings(locals())
+
 
 
 # Static files (CSS, JavaScript, Images)
