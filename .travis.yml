@@ -13,6 +13,7 @@ script:
   - npm run dev
   - cd ..
   - cd backend
+  - import django
   - python3 manage.py runserver
 deploy:
   provider: heroku
