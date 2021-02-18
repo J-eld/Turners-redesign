@@ -12,11 +12,10 @@ install:
 script:
   
   - cd backend
-  - python3 manage.py runserver 0.0.0.0:8000 --noreload
+  - python3 manage.py runserver 0.0.0.0:8000
 deploy:
   provider: heroku
   api_key: $api_key
   app: turners-redesign
-  local_dir: backend/TurnersRedesign/static/build
   on:
     branch: branch-3
