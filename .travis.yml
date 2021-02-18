@@ -10,11 +10,7 @@ cache:
 install: 
   - pip install Django
 script:
-  - cd frontend
-  - npm install webpack
-  - npm install -D webpack-cli
-  - npm run dev
-  - cd ..
+  
   - cd backend
   - python3 manage.py runserver 0.0.0.0:8000 --noreload
 deploy:
