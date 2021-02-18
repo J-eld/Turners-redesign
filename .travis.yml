@@ -8,7 +8,7 @@ cache:
   - /frontend/node_modules
 
 install: 
-  - pip install -q Django==$DJANGO
+  - pip install Django
 script:
   - cd frontend
   - npm install webpack
