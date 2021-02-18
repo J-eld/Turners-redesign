@@ -10,7 +10,7 @@ script:
   - cd frontend
   - npm install webpack
   - npm install -D webpack-cli
-  - npm run build
+  - npm run dev
   - cd ..
   - cd backend
   - py manage.py runserver
