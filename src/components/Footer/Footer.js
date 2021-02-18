@@ -1,13 +1,20 @@
 
-import React from "react";
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 function Footer() {
+  const FlexHelper = {
+    display: 'flex',
+    justifyContent: 'space-around',
+    flexDirection: 'column',
+    alignItems: 'center',
+  };
+
   return (
     <div className="main-footer">
-      <div className="container">
+      <div style={FlexHelper} className="container">
         <div className="row">
           {/* Column1 */}
           <div className="col1">
@@ -26,23 +33,32 @@ function Footer() {
             </p>
           </div>
           {/* Column2 */}
-          <div className="col2">
-            <p className='deal'>ONE DAY DEAL</p>
-            <h2>SEE OUR OFFERS ON FINANCING YOUR ELECTRIC CAR</h2>
-            <p className='read-more'>Read more about the processing of your personal data on the <b>PRIVACY POLICY</b> page.</p>
-            <TextField placeholder='Email' /> <Button>Send</Button>
+          <div style={{ margin: '0 2rem' }} className="col2">
+            <p className="deal">ONE DAY DEAL</p>
+            <h2>
+              SEE OUR OFFERS ON FINANCING YOUR <br /> ELECTRIC CAR
+            </h2>
+            <p className="read-more">
+              Read more about the processing of your <br />
+              personal data on the <b>PRIVACY POLICY</b> page.
+            </p>
+            <TextField placeholder="Email" /> <Button>Send</Button>
           </div>
           {/* Column3 */}
           <div className="col3">
-            <h2><img
-              src='/static/turners-logo.png'
-              width="300"
-              height="auto"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            /></h2>
-            <h2 id='social'><img src='/static/Social.svg' /></h2>
-            <ui className="list-unstyled" id='about'>
+            <h2>
+              <img
+                src="/static/turners-logo.png"
+                width="300"
+                height="auto"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+              />
+            </h2>
+            <h2 id="social">
+              <img src="/static/Social.svg" />
+            </h2>
+            <ui className="list-unstyled" id="about">
               <li>ABOUT US</li>
               <li>POLICY</li>
               <li>GENERAL CONDITIONS</li>
@@ -56,8 +72,8 @@ function Footer() {
         <hr />
         <div className="row">
           <p className="col-sm">
-            &copy;{new Date().getFullYear()} All rights reserved.
-            100% KIWI OWNED
+            &copy;{new Date().getFullYear()} All rights reserved. 100% KIWI
+            OWNED
           </p>
         </div>
       </div>
