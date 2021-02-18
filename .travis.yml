@@ -10,7 +10,9 @@ script:
   - npm install -D webpack-cli
   - npm run build
 deploy:
-  provider: pages
+  provider: heroku
+  api_key: 
+    secure: 7ab1a07b-592e-40bd-9763-d4f0f62eb20b
   skip_cleanup: true
   github_token: $github_token
   local_dir: backend/TurnersRedesign/static/build
