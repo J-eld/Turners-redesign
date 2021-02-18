@@ -25,7 +25,7 @@ SECRET_KEY = 'l$9s-q6@z%e=ii&41eomn(2jgb&jl5b$*7gl!_h9ffkhby9j$k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://turners-redesign.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['turners-redesign.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
