@@ -8,6 +8,7 @@ import {
   NavDropdown,
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './NavigationBar.css';
 
 // Define the React app
 const NavigationBar = () => {
@@ -44,6 +45,7 @@ const NavigationBar = () => {
               variant="Secondary"
               title="MENU"
               id="basic-nav-dropdown"
+              className="menu"
             >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
