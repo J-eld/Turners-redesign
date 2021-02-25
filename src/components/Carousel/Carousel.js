@@ -91,8 +91,8 @@ const ImgCarousel = () => {
             alt="Second slide"
           />
           <Carousel.Caption style={CarouselText}>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3></h3>
+            <p></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -104,9 +104,9 @@ const ImgCarousel = () => {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3></h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              
             </p>
           </Carousel.Caption>
         </Carousel.Item>
