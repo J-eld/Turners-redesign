@@ -43,7 +43,7 @@ function ContactForm() {
           <TextField
             style={{ backgroundColor: 'white', width: '50%' }}
             variant="filled"
-            placeholder="EMAIL ADDRESS"
+            placeholder="EMAL ADDRESS"
           />
         </div>
         <div id="form">
@@ -56,7 +56,7 @@ function ContactForm() {
       </div>
       <div>
         <Button variant="contained" color="primary">
-          Submit
+          Submi
         </Button>
       </div>
       <img

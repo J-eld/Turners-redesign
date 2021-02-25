@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   // Where Webpack spits out the results (the myapp static folder)
   output: {
-    path: path.resolve(__dirname, '../backend/TurnersRedesign/static/build'),
+    path: path.resolve(__dirname, './backend/TurnersRedesign/static/build'),
     filename: '[name].js',
   },
   module: {

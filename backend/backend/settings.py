@@ -128,7 +128,7 @@ django_heroku.settings(locals())
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'backend/TurnersRedesign/build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'TurnersRedesign', 'static')
 STATICFILES_DIRS = []
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
